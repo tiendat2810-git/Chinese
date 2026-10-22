@@ -78,10 +78,10 @@
 
 ## 🔍 6. Sổ Tay Bắt Lỗi Cá Nhân (Error Log)
 
-| Âm / Vần bị lỗi | Hiện tượng sai khi nghe lại | Cách khắc phục | Trạng thái |
-| :--- | :--- | :--- | :---: |
-| *Ví dụ: dōu (都)* | *Đọc thành "đô" (mất âm u)* | *Chúm tròn môi ở âm cuối để tạo đuôi "u"* | [ ] |
-| *(Ghi lại...)* | | | [ ] |
+| Âm / Vần bị lỗi  | Hiện tượng sai khi nghe lại | Cách khắc phục                            | Trạng thái |
+| :--------------- | :-------------------------- | :---------------------------------------- | :--------: |
+| *Ví dụ: dōu (都)* | *Đọc thành "đô" (mất âm u)* | *Chúm tròn môi ở âm cuối để tạo đuôi "u"* |    [ ]     |
+| *(Ghi lại...)*   |                             |                                           |    [ ]     |
 
 ---
 
