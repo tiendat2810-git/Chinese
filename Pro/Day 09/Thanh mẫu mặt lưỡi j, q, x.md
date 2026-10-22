@@ -41,6 +41,11 @@
 > - `q + ü ➔ qu` (vẫn đọc là *q-ü*, không được đọc là *cu*)
 > - `x + ü ➔ xu` (vẫn đọc là *x-ü*, không được đọc là *xu thông thường*)
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI NHÓM MẶT LƯỠI j, q, x
+> - **Lỗi đọc chữ q thành "cu/qu" tiếng Việt**: Nhiều người nhìn thấy `qù` (去 - đi) lại đọc thành "qu / cu / quỳ". Âm `q` là âm bật hơi sắc nhọn nhất tiếng Trung: miệng dẹt cười, ép mặt lưỡi dán trần họng rồi bắn luồng hơi nổ qua kẽ răng!
+> - **Lỗi chu môi khi phát âm**: Nhóm `j, q, x` là âm mặt lưỡi mỉm cười. Nếu hai khóe miệng không kéo dẹt sang hai bên, âm sẽ bị biến dạng sang nhóm uốn lưỡi `zh, ch, sh`.
+> - **Quên bật hơi làm biến đổi nghĩa**: `qī` (七 - số 7) nếu không bật hơi sẽ bị người nghe hiểu nhầm thành `jī` (鸡 - con gà)!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

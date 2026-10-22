@@ -44,6 +44,11 @@
 * <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">un (uen)</span>: Viết tắt của `uen`. Bắt đầu từ `u`, lướt qua âm `e` rồi đóng ở `n` (nghe như vần "uân" tiếng Việt: *wèn = hỏi, chūn = mùa xuân*).
 * <span style="background:#7b1fa2; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">ün</span>: Bắt đầu bằng khẩu hình huýt sáo của `ü`, đưa đầu lưỡi lên nướu đóng âm (nghe như vần "uyn" huýt sáo: *yún = mây, qúnzi = váy*).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KHI PHÁT ÂM VẬN MẪU MŨI TRƯỚC (-n)
+> - **Lỗi nuốt đuôi n**: Nhiều người dứt âm mà miệng vẫn mở toang, không đưa đầu lưỡi chạm vào nướu răng trên khiến âm nghe cụt lủn và không tạo được tiếng vang mũi.
+> - **Bẫy viết tắt của un (uen)**: Chữ Pinyin viết là `lún, chūn, wèn` nhưng thực chất phát âm là `luen, chuen, uen` (tựa như "uân" tiếng Việt). Đừng đọc thành "un" bẹt như trong từ "hun khói"!
+> - **Bẫy thị giác của ün**: Khi viết `jūn, qún, xūn, yún`, chữ bị bỏ 2 chấm nhưng bắt buộc phải giữ môi tròn huýt sáo của âm `ü`, không được đọc thành "u"!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

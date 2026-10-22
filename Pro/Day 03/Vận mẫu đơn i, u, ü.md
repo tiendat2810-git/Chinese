@@ -38,6 +38,11 @@
 * **u**: Môi chúm tròn nhô ra phía trước, cuống lưỡi nâng cao về phía ngạc mềm.
 * **ü**: Khẩu hình bên ngoài tròn môi như `u`, nhưng vị trí đặt lưỡi bên trong giống như `i`.
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI VẬN MẪU ü (U HAI CHẤM)
+> - **Lỗi đọc thành âm "uy" tiếng Việt**: Khi đọc "uy" tiếng Việt, môi bạn cử động từ tròn sang bẹt mép. Trong tiếng Trung, **khẩu hình tròn môi huýt sáo của `ü` phải ĐÓNG BĂNG 100%** từ lúc lấy hơi đến khi dứt âm!
+> - **Lỗi nhầm lẫn tai hại `u` vs `ü`**: Ví dụ `lù` (路 - con đường) vs `lǜ` (绿 - màu xanh lá). Đọc sai khẩu hình sẽ biến chỉ đường thành đổi màu!
+> - **Bẫy thị giác Pinyin**: Khi ghép với `j, q, x` hay đứng một mình `yu`, chữ `ü` bị bỏ 2 dấu chấm thành `ju, qu, xu, yu`. Người mới hay đọc nhầm thành chữ `u`. Hãy khắc cốt ghi tâm: **Sau j, q, x, y - chữ U chính là Ü!**
+
 ---
 
 ## 🎯 3. Bảng Luyện Âm & 4 Thanh Điệu

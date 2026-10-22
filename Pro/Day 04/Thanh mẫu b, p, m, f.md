@@ -41,6 +41,11 @@
 * <span style="background:#2e7d32; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">m</span>: Hai môi ngậm lại, luồng hơi thoát ra qua khoang mũi, thanh đới rung (giống chữ "m" tiếng Việt).
 * <span style="background:#f57f17; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">f</span>: Răng cửa hàm trên chạm nhẹ vào môi dưới, luồng hơi ma sát thoát ra ngoài khe răng (giống chữ "ph" tiếng Việt).
 
+> [!CAUTION] 🚫 BẪY ÂM BỒI KINH ĐIỂN VỚI b VÀ p (TỪ LỖI SAI.MD)
+> - **Nhìn b đọc "bờ"**: Người mới hay đọc `bàba` (爸爸) thành "bà ba" tiếng Việt. Trong tiếng Trung, **b là âm vô thanh**, dây thanh không rung trước khi mở môi, nghe gần giống âm "p" nhẹ: `bàba` đọc nghe tựa như "pa pa".
+> - **Lẫn lộn b và p**: Nếu không bật hơi dứt khoát âm `p`, từ `pà` (怕 - sợ hãi) sẽ bị đối phương nghe nhầm thành `bà` (爸 - bố)!
+> - **Mẹo kiểm tra dây thanh**: Đặt 2 ngón tay lên cổ họng khi phát âm `b` và `p`: Cổ họng hoàn toàn không được rung trước khi phát âm nguyên âm!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

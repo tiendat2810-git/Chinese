@@ -37,6 +37,11 @@
 > - <span style="background:#f57f17; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">e</span>: Mở miệng như khi phát âm `o`, nhưng kéo nhẹ khóe miệng sang hai bên. Âm nằm giữa **ưa** và **ơ** trong tiếng Việt. Khi kết hợp với các thanh mẫu họng (g, k, h), âm này nghe rất giòn và vang.
 > - <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">ê</span>: Miệng mở vừa phải, đầu lưỡi chạm vào răng cửa dưới, phát âm tương tự âm "ê" tiếng Việt nhưng dẹp môi hơn (thường xuất hiện trong than từ hoặc kết hợp với i/ü thành ie, üe).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KHI PHÁT ÂM VẬN MẪU ĐƠN
+> - **Lỗi ép âm `o`**: Đừng đọc bẹt như "o" tiếng Việt (con bò) hay cứng đơ như "ô" (cái ô). Môi phải hơi chúm chu ra phía trước, luồng hơi thoát ra tròn trịa.
+> - **Lỗi đọc `e` thành "e" hoặc "ơ" tiếng Việt**: Nếu đọc `gēge` (ca ca/anh trai) thành "gơ gơ" hay "ke ke" là hoàn toàn sai. Âm `e` trong tiếng Trung là âm họng, gốc lưỡi nâng nhẹ, âm bật ra giòn tựa "ưa - ơ".
+> - **Tránh xa âm bồi**: Không ghi chép chú thích "e = ơ", "o = uô" vào sách vở vì sẽ làm mất đi khẩu hình chuẩn ngay từ ngày thứ 2.
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần & 4 Thanh Điệu

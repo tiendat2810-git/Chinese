@@ -41,6 +41,11 @@
 * `shénme` (什么 - cái gì)
 * `xièxie` (谢谢 - cảm ơn)
 
+> [!CAUTION] 🚫 BẪY LỖI SAI "NÓI NHƯ ROBOT" VỚI KHINH THANH (TỪ LỖI SAI.MD)
+> - **Lỗi đọc cào bằng 2 âm tiết**: Đọc `māma` thành "ma ma" hay `xièxie` thành "xiệt xie" với độ dài và độ mạnh ngang nhau sẽ biến câu nói thành giọng robot không cảm xúc.
+> - **Lỗi đọc khinh thanh thành dấu nặng**: Khinh thanh là âm **NHẸ và NGẮN**, không phải dìm giọng thật nặng như dấu nặng tiếng Việt!
+> - **Nguyên tắc nhịp điệu tự nhiên**: Hãy tưởng tượng bạn đang tung một quả bóng nảy: Âm thứ nhất nảy mạnh (nhấn trọng âm rõ thanh điệu), âm thứ hai rơi nhẹ xuống như bóng chạm đất (lướt qua trong 0.2 giây).
+
 ---
 
 ## 🔄 3. Bài Tập Thực Hành Đoạn Hội Thoại Tự Nhiên

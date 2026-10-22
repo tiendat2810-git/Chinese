@@ -39,6 +39,15 @@
 > - <span style="background:#2e7d32; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">sh</span>: Đầu lưỡi cong gần chạm ngạc cứng tạo khe hẹp, luồng hơi ma sát thoát ra (nghe như chữ "s" nặng uốn lưỡi tiếng Việt).
 > - <span style="background:#f57f17; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">r</span>: Vị trí giống `sh`, nhưng **thanh đới rung lên** (nghe như chữ "r" tiếng Việt hoặc âm "d" rung nhẹ, tuyệt đối không rung bần bật như tiếng Pháp hay tiếng Nga).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI NHÓM UỐN LƯỠI zh, ch, sh, r (TỪ LỖI SAI.MD)
+> - **Lỗi ép âm bồi "tr, ch" tiếng Việt**: Rất nhiều người gán `chī` (ăn) thành "chi", `zhōngguó` thành "chông của". Điều này làm mất đi âm sắc trầm, vang đặc trưng của tiếng phổ thông Trung Quốc.
+> - **Lỗi uốn lưỡi "nửa vời"**: Nếu lưỡi chỉ cong chạm vào chân răng thì âm sẽ bị lai tạp sang nhóm `z, c, s`. Phải cong đầu lưỡi lui sâu vào sau chân răng trên (chạm vào phần vòm họng gờ cứng).
+> - **Lỗi quên bật hơi âm ch**: `chīfàn` (吃饭 - ăn cơm) nếu không tống luồng hơi nổ uốn lưỡi thì người nghe sẽ nghe ra `zhī` (知 - biết).
+
+> [!TIP] 💡 MẸO ĐỊNH VỊ ĐẦU LƯỠI CHUẨN XÁC
+> - Dùng đầu lưỡi rà từ chân răng cửa trên ngược dần vào sâu bên trong vòm miệng: Bạn sẽ chạm phải một chỗ gờ xương cứng nhô lên. Đó chính là **ngạc cứng**!
+> - Đặt đầu lưỡi cố định tại vị trí gờ xương đó, thả lỏng môi và bắt đầu phát âm!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

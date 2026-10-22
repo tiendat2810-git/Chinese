@@ -35,6 +35,11 @@
 > Phát âm âm `e` (giữa ưa và ơ), sau đó **ngay lập tức cuộn đầu lưỡi về phía cuống họng**.
 > Lưu ý: `er` là một vận mẫu độc lập đặc biệt, không ghép với bất kỳ phụ âm nào khác.
 
+> [!CAUTION] 🚫 BẪY LỖI SAI "KÉO LÙI ĐIỂM SỐ" VỚI zhi, chi, shi, ri & er
+> - **Lỗi đọc lǎoshī thành "lảo xi"**: Người Việt cực kỳ hay mắc lỗi đọc `lǎoshī` (giáo viên) và `shì` (là/vâng) thành "lao xi" hay "xi". Âm `shi` phải uốn cong đầu lưỡi chạm ngạc cứng, âm trầm sâu tựa chữ "sư" uốn lưỡi!
+> - **Lỗi nuốt âm cuộn của èr (số 2)**: Đọc `èr` mà không cuộn đầu lưỡi về cuống họng thì nghe như âm "ơ / ợ" cộc lốc. Phải lướt cuộn lưỡi thật mượt mà!
+> - **Không hạ đầu lưỡi khi dứt âm**: Phát âm chuỗi `zhi, chi, shi, ri` xong, đầu lưỡi vẫn phải nằm ở vòm ngạc cứng, tuyệt đối không trượt rơi xuống răng cửa!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần & Từ Vựng

@@ -38,6 +38,18 @@
 * **uan**: Tròn môi phát âm `u`, lướt sang `an` mở rộng (đọc tựa "oan" tiếng Việt: *guān = quan/đóng*).
 * **iang**: Bắt đầu bằng `i`, lướt sang `ang` và đóng âm bằng cuống lưỡi (đọc tựa "i-ang": *xiǎng = muốn/nghĩ*).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI "KÉO ĐỈNH CAO" VỀ VẬN MẪU MŨI PHỨC (TỪ LỖI SAI.MD)
+> - **Lỗi nhìn a đọc "a" trong ian**: 95% người tự học đọc `qián` (tiền) thành "chi-an", `miàntiáo` (mì sợi) thành "mi-an théo". Đây là lỗi phát âm người Trung Quốc nghe thấy ngay lập tức. Hãy nhớ: **ian đọc là i-en**!
+> - **Lỗi đọc yuán thành "du-an"**: Đồng tiền Nhân dân tệ `yuán` (元) nếu đọc là "du-an" thì hoàn toàn sai. Phải huýt sáo môi tròn từ đầu và lướt sang vần en: "duy-én"!
+
+> [!TIP] 💡 TẬN DỤNG "VŨ KHÍ" TỪ HÁN - VIỆT (TỪ TIP.MD)
+> - Các từ chứa vần mũi này có độ tương đồng âm Hán - Việt cực cao:
+>   - `tiān` (天) = **Thiên** (trời)
+>   - `qián` (钱) = **Tiền** (tiền bạc)
+>   - `miàn` (面) = **Diện** (mặt/mì)
+>   - `guān` (关) = **Quan** (cửa khẩu / hải quan / đóng cửa)
+> - Hãy liên tưởng ngay tới âm Hán - Việt để vừa nhớ nghĩa vừa nhớ vần nhanh gấp 3 lần!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

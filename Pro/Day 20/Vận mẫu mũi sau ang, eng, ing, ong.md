@@ -40,6 +40,13 @@
 * <span style="background:#f57f17; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">ing</span>: Miệng cười phát âm `i`, cuống lưỡi nâng cao đóng âm (nghe như vần "inh" tiếng Việt: *bīng = băng/lạnh*).
 * <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">ong</span>: Môi chúm tròn phát âm `u/o`, cuống lưỡi đóng âm (nghe như vần "ung" tiếng Việt: *zhōng = Trung Quốc*).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI VẬN MẪU MŨI SAU (-ng)
+> - **Lỗi đọc ong thành "ong" bẹt tiếng Việt**: Nhiều người đọc `zhōngguó` (Trung Quốc) thành "choong của". Đúng chuẩn: Môi phải chúm tròn từ đầu đến cuối, nghe tựa vần "ung" trong tiếng Việt (*zhōng = trung*).
+> - **Lẫn lộn chí mạng giữa -n và -ng**:
+>   - `fēn` (分 - phút) ⚡ `fēng` (风 - cơn gió)
+>   - `shān` (山 - ngọn núi) ⚡ `shāng` (商 - buôn bán)
+> - **Mẹo kiểm tra độ vang**: Khi phát âm đuôi `-ng`, dùng ngón tay chạm nhẹ lên sống mũi: Bạn phải cảm nhận được độ rung tê nhẹ của hốc mũi!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

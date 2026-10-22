@@ -36,6 +36,11 @@
 * <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">k</span>: Vị trí y hệt chữ `g`, nhưng tống luồng khí cực mạnh từ họng phụt ra ngoài (kiểm tra bằng giấy mỏng, giấy phải bay mạnh).
 * <span style="background:#2e7d32; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">h</span>: Cuống lưỡi nâng gần chạm ngạc mềm tạo một khe hẹp, luồng hơi ma sát đi qua khe hẹp đó. Nghe ma sát trầm ấm hơn chữ "h" tiếng Việt.
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI NHÓM CUỐNG LƯỠI g, k, h
+> - **Lỗi đọc g thành "gờ" tiếng Việt**: `gāo` (cao) đọc thành "giao / gao" là sai. Phải đọc là "cao" (không bật hơi).
+> - **Lỗi nuốt hơi của k**: `kāfēi` (cà phê) mà đọc thành "ca-phê" thì biến thành âm `g`. Âm `k` đòi hỏi phải gồng nhẹ cuống họng và tống luồng hơi nổ giòn giã!
+> - **Lỗi đọc h quá nhẹ**: Âm `h` tiếng Trung không nhẹ hều như chữ "h" tiếng Việt (hoa lá) mà là âm xát sâu trong cuống họng, hơi cọ xát nhẹ tạo âm trầm ấm (*hē chá* - uống trà).
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

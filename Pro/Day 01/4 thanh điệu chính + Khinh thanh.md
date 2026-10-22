@@ -33,6 +33,15 @@ Cao độ 1   └── [Thanh 3: 2-1-4 (xuống sâu rồi nảy)] ┘
 > 4. <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Thanh 4 (mà - 51)</span>: Bắt đầu từ nốt cao nhất, giật mạnh và dứt khoát rơi xuống đáy như tiếng dậm chân dứt khoát ra lệnh. Tuyệt đối **không đọc rê giọng thành dấu huyền `\` tiếng Việt**.
 > 5. <span style="background:#616161; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Khinh thanh (ma - 0)</span>: Đọc cực nhẹ và ngắn, độ dài chỉ bằng 1/2 âm bình thường.
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN CỦA NGƯỜI VIỆT VỀ THANH ĐIỆU (TỪ LỖI SAI.MD)
+> - **Bẫy 1: Đồng nhất Thanh 1 với thanh ngang tiếng Việt**: Thanh ngang tiếng Việt có cao độ trung bình (44) và đuôi âm hơi rơi xuống. Trong khi đó, **Thanh 1 tiếng Trung cao độ 55** (cao hơn hẳn), âm lượng phải giữ phẳng tưng như một đường chỉ kẻ ngang.
+> - **Bẫy 2: Đọc Thanh 4 thành dấu huyền `\`**: Người Việt hay đọc `mà` (mắng) nghe êm ái như chữ "mày/mà", khiến câu nói thiếu lực và sai nghĩa. Thanh 4 phải giật dội từ nốt cao nhất rơi thẳng xuống đáy trong tích tắc!
+> - **Bẫy 3: Học phát âm qua bài hát quá sớm**: Bài hát bẻ cong thanh điệu theo nốt nhạc (ví dụ từ mang thanh 4 ca sĩ có thể hát vút lên theo giai điệu). Ở tuần đầu, chỉ luyện theo audio/video nói chuẩn!
+
+> [!IMPORTANT] 🎯 PHƯƠNG PHÁP TỰ THẨM ÂM & GHI ÂM (FEEDBACK LOOP TỪ TIP.MD)
+> - Đừng chỉ nhẩm trong miệng! Hãy **nói to rõ ràng**, bật app ghi âm điện thoại lên, đọc chuỗi `mā - má - mǎ - mà`.
+> - Nghe lại và so sánh trực tiếp với video mẫu: Nếu thấy thanh 4 còn "dây dưa", hãy đứng dậy, giơ tay chém mạnh từ trên cao xuống để trợ lực cơ hoành giật đúng thanh 4!
+
 ---
 
 ## 🎯 3. Bảng Luyện Âm Mục Tiêu Hôm Nay

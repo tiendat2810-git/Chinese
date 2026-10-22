@@ -39,6 +39,11 @@
   * `yìnián` (一年 - một năm: nián là thanh 2)
   * `yǐqǐ` (一起 - cùng nhau: qǐ là thanh 3)
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KHI ĐỌC SÁCH GIÁO KHOA (TỪ LỖI SAI.MD)
+> - **Cái bẫy chính tả**: Trong hầu hết sách giáo trình, từ `不` và `一` luôn được in với thanh điệu gốc (`bù`, `yī`) để người học nhận biết từ gốc. Người học vẹt nhìn chữ nào đọc chữ đó sẽ đọc thành `bù shì` (sai biến điệu).
+> - **Hậu quả**: Hai thanh 4 đi liền nhau (`bù shì`, `bù qù`) làm âm thanh nặng trịch, phát âm cực kỳ mệt và không đúng nhịp điệu bản xứ.
+> - **Thần chú khắc cốt ghi tâm**: **"GẶP BỐN (4) HÓA HAI (2)"** ➔ Cứ hễ thấy `bù` và `yī` đứng trước một từ mang thanh 4 giật dội xuống, lập tức chuyển giọng vuốt lên thành `bú` và `yí`!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đọc Thử Thách Phản Xạ

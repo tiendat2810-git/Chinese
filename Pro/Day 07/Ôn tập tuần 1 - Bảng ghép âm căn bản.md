@@ -51,6 +51,15 @@
 6. `hěn gāo` (很高 - Rất cao)
 7. `nǐ hǎo ma` (你好吗 - Bạn khỏe không)
 
+> [!CAUTION] 🛑 CHECKPOINT CỐT TỬ: ĐỪNG VỘI QUA TUẦN 2 NẾU CHƯA QUA ĐƯỢC 3 BÀI TEST NÀY!
+> 1. **Test tờ giấy**: Phát âm cặp `bā` ⚡ `pā`, `dā` ⚡ `tā`, `gē` ⚡ `kē` — tờ giấy phải phân định rõ ràng: âm không bật hơi giấy đứng yên, âm bật hơi giấy bay mạnh.
+> 2. **Test cao độ**: Đọc liên hoàn `mā` (55 ngân cao phẳng) ⚡ `mà` (51 giật dứt khoát như dậm chân). Nếu thanh 4 vẫn nghe như dấu huyền thì tuyệt đối chưa đạt!
+> 3. **Test khẩu hình đóng băng của ü**: Đọc `lǜ` và `nǚ`, môi chu tròn huýt sáo không cử động.
+
+> [!TIP] 💡 CHIẾN LƯỢC ÔN TẬP THẨM ÂM (TỪ TIP.MD)
+> - Hãy dành trọn buổi Day 07 để ghi âm toàn bộ 7 cụm từ trên.
+> - Bật audio mẫu của người bản xứ lên nghe trước một lượt, sau đó bấm ghi âm và nhại lại theo kỹ thuật **Shadowing (Nói đuổi)** để nắn chỉnh ngữ điệu toàn câu!
+
 ---
 
 ## 🎙️ 4. Nhật Ký Luyện Tập & Chèn Ghi Âm

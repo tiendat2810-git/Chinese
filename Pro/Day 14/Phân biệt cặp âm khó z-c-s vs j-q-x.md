@@ -30,6 +30,14 @@
 | **Khi đi với chữ "i"** | Đọc thành âm **ư / ơ** ngậm miệng (`zi, ci, si`) | Đọc thành âm **"i"** ngân cao rõ rệt (`ji, qi, xi`) |
 | **Khi đi với "u"** | Ghép với `u` thường (`zu, cu, su` - tròn môi) | **Chỉ đi với `ü`** (`ju, qu, xu` - huýt sáo) |
 
+> [!CAUTION] 🚫 BẪY LẪN LỘN KHIẾN NGƯỜI BẢN XỨ HOANG MANG
+> - Nếu bạn nói `sì` (四 - số 4) mà cười dẹt mép thành `xì` (戏), người nghe sẽ tưởng bạn đang nói về "vở kịch / tuồng hát".
+> - Nếu nói `cì` (次 - số lần: yī cì = một lần) mà không khép răng thẳng lưỡi mà lại bẹt miệng bật hơi ra `qì` (气), câu nói sẽ biến thành "một luồng khí giận"!
+
+> [!TIP] 💡 BÍ QUYẾT CHUYỂN ĐỔI KHẨU HÌNH TRONG 0.5 GIÂY
+> - **Chế độ z-c-s (Răng khép)**: Hai hàm răng cắn hờ, đầu lưỡi dí sát răng trên, âm xì ma sát thẳng về phía trước.
+> - **Chế độ j-q-x (Cười tươi)**: Môi kéo dẹt hết cỡ sang 2 mang tai, mặt lưỡi ốp lên trần họng, âm thanh phát ra sắc nhọn, thanh mảnh.
+
 ---
 
 ## 🎯 3. Bảng Luyện Cặp Từ Đối Kháng Tương Phản

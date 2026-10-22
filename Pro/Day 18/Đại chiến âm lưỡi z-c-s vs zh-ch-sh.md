@@ -29,6 +29,15 @@
 | **Môi & Hàm** | Răng khép hờ, môi dẹt sang hai bên | Miệng mở rộng hơn, môi hơi chúm nhẹ hình phễu |
 | **Cảm giác âm** | Âm mỏng, sắc bén, nhiều tiếng xì qua kẽ răng | Âm dày, ấm, đầm và trầm sâu trong vòm họng |
 
+> [!CAUTION] 🚫 BẪY LỖI "LƯỜI CƠ MIỆNG" & ĐỌC CÀO BẰNG (TỪ LỖI SAI.MD)
+> - **Lỗi đọc cào bằng**: Vì ngại uốn lưỡi, nhiều người biến toàn bộ `zh, ch, sh` thành `z, c, s` (nói giọng ngọng phẳng lưỡi).
+> - **Lỗi uốn lưỡi loạn xạ**: Một số bạn khi học uốn lưỡi thì từ nào cũng uốn lưỡi bừa bãi, khiến `sì` (4) cũng uốn cong thành `shì` (10)!
+> - **Tác hại lớn**: Câu `sìshí sì` (44) nếu phát âm cào bằng sẽ biến thành `sìsì sì` (người bản xứ hoàn toàn không hiểu bạn đang nói số bao nhiêu).
+
+> [!TIP] 💡 BÍ QUYẾT TẬP TRƯỚC GƯƠNG (MIRROR TECHNIQUE TỪ TIP.MD)
+> - Đứng trước gương: Khi đọc nhóm `z, c, s`, bạn phải nhìn thấy **răng khép hờ, mép kéo sang bên**.
+> - Khi đọc `zh, ch, sh`: Miệng mở tròn hơn, lưỡi thụt vào trong và cong lên, không để lộ đầu lưỡi ra kẽ răng!
+
 ---
 
 ## 🎯 3. Bảng Luyện Cặp Từ Đối Kháng Tương Phản

@@ -40,6 +40,11 @@
 * <span style="background:#2e7d32; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">n</span>: Đầu lưỡi dán lên nướu răng hàm trên, luồng hơi thoát qua đường mũi (âm mũi, thanh đới rung).
 * <span style="background:#f57f17; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">l</span>: Đầu lưỡi chạm nướu trên nhưng hai mép lưỡi hạ xuống, hơi thoát ra hai bên cạnh lưỡi (âm bên).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI NHÓM d, t, n, l
+> - **Nhìn d đọc "đờ"**: Nhìn thấy `dà` (大 - to lớn) mà đọc thành "đa / đạ" là sai 100%. `d` trong Pinyin là âm tắc vô thanh, nghe tựa âm "t" tiếng Việt.
+> - **Quên bật hơi âm t**: Nhìn thấy `tā` (他 - anh ấy) mà đọc thành "ta" thì người bản xứ nghe ra chữ `dā`. Chữ `t` phải bật luồng khí nổ như âm "th" có gió!
+> - **Lỗi lẫn lộn n vs l**: Tiếng Trung phân biệt cực kỳ nghiêm ngặt giữa `n` và `l` (ví dụ `nǚ` - phụ nữ vs `lǚ` - du lịch). Người học hay nói ngọng n/l ở tiếng Việt cần chú ý bịt mũi để kiểm tra: âm `n` bịt mũi lại sẽ nghẹt tiếng, còn âm `l` bịt mũi vẫn phát ra âm bình thường từ hai bên mép lưỡi!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

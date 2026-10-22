@@ -32,6 +32,11 @@
   * `Thanh 3 + Thanh 2`: `měiguó` ➔ đọc `měi` xuống đáy họng rồi vuốt `guó` (美国 - Nước Mỹ)
   * `Thanh 3 + Thanh 4`: `hǎokàn` ➔ đọc `hǎo` xuống đáy rồi giật mạnh `kàn` (好看 - Đẹp/hay)
 
+> [!CAUTION] 🚫 BẪY LỖI "ĐỌC ĐỦ THANH 3" KHIẾN CÂU NÓI CỨNG ĐỜ (TỪ LỖI SAI.MD)
+> - **Cố uốn lượn 2-1-4 từng từ một**: Rất nhiều người khi ghép câu vẫn cố gắng xuống thật sâu rồi nảy bổng lên cho từng từ mang thanh 3. Hậu quả là giọng nói bị giật cục, đứt gãy và cực kỳ tốn sức.
+> - **Giải pháp tự nhiên**: Hãy giải phóng cơ miệng bằng **NỬA THANH 3**! Chỉ cần hạ giọng chìm xuống đáy cổ họng rồi lập tức chuyển sang từ tiếp theo. Giọng bạn sẽ mượt mà, trôi chảy như người bản xứ ngay lập tức!
+> - **Lưu ý chính tả**: Trên mặt chữ Pinyin, người ta **vẫn viết dấu thanh 3 gốc** (viết là `nǐ hǎo`, `hěn hǎo`). Bạn phải tự động "bật công tắc biến điệu" trong não khi phát âm!
+
 ---
 
 ## 🎯 2. Bài Tập Thực Chiến Chuỗi Biến Điệu

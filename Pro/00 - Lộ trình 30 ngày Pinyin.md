@@ -11,6 +11,26 @@
 
 ---
 
+## 🚫 4 "TỬ HUYỆT" PHÁT ÂM CẦN TRÁNH TUYỆT ĐỐI (TRÍCH TỪ LỖI SAI)
+
+> [!CAUTION] 🛑 CẢNH BÁO BẪY TƯ DUY NGỮ ÂM KHI MỚI BẮT ĐẦU
+> 1. <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Tuyệt đối KHÔNG học theo âm bồi & gán ép âm tiếng Việt</span>: Ghi chép tiếng Trung bằng chữ tiếng Việt (ví dụ ghi zh thành "tr", q thành "ch", j thành "gi") sẽ phá hủy hoàn toàn cảm quan âm vị học bản xứ. Tiếng Trung có nhiều âm không hề tồn tại trong tiếng Việt.
+> 2. <span style="background:#d84315; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Không coi nhẹ cao độ Thanh 1 (55) & Thanh 4 (51)</span>: Thanh 1 cao hơn thanh ngang tiếng Việt rất nhiều; Thanh 4 là âm giật từ đỉnh dội xuống, không phải dấu huyền. Sai thanh điệu là sai toàn bộ ngữ nghĩa!
+> 3. <span style="background:#e65100; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Đừng vội học chữ Hán/ngữ pháp khi phát âm chưa vững</span>: Nghe - nói là nền móng phản xạ. Nếu phát âm ngọng ngay từ đầu, bạn sẽ tạo thành phản xạ sai ăn sâu vào tiềm thức (*fossilization*), sau này mất gấp 10 lần thời gian để sửa.
+> 4. <span style="background:#bf360c; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Không luyện phát âm qua bài hát trong giai đoạn đầu</span>: Giai điệu âm nhạc làm bẻ cong thanh điệu gốc của từ vựng, dễ khiến người mới học bị lệch tone giọng.
+
+---
+
+## 💡 CHIẾN THUẬT VÀNG LUYỆN ÂM ĐÚNG NGAY TỪ ĐẦU (TRÍCH TỪ TIP)
+
+> [!TIP] 🌟 4 TRỤ CỘT LUYỆN TẬP ĐỘT PHÁ
+> - <span style="background:#1565c0; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Dành 1 đến 4 tuần đầu chỉ để tôi luyện Pinyin</span>: Nắm chắc **21 thanh mẫu, 36 vận mẫu và 4 thanh điệu chính** trước khi học viết ngữ pháp nâng cao.
+> - <span style="background:#2e7d32; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Chuẩn hóa Khẩu hình, Vị trí lưỡi & Luồng hơi</span>: Hiểu rõ cơ chế đặt lưỡi (đầu lưỡi, mặt lưỡi, cuộn lưỡi) và phân biệt dứt khoát âm bật hơi nổ vs không bật hơi.
+> - <span style="background:#6a1b9a; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Vũ khí Tự ghi âm & Nhại giọng (Shadowing & Recording)</span>: Bắt chước nhại theo audio người bản xứ ngay lập tức, tự ghi âm giọng mình chèn vào từng bài học để đối chiếu và sửa lỗi ngay trong ngày.
+> - <span style="background:#00695c; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">Micro-learning & Quy tắc 2 phút</span>: Luyện đều đặn 15–20 phút/ngày, không dồn cục cuối tuần. Nếu lười, chỉ cần mở máy nghe đúng 1 âm để tạo đà.
+
+---
+
 ## 🧭 HƯỚNG DẪN LUYỆN TẬP HIỆU QUẢ VỚI OBSIDIAN
 
 > [!TIP] 💡 Quy trình luyện tập chuẩn mỗi ngày (15 - 25 phút)
@@ -99,7 +119,16 @@
 
 | STT | Âm / Từ vựng | Lỗi thường gặp | Mẹo sửa nhanh | Đã khắc phục |
 | :---: | :--- | :--- | :--- | :---: |
-| 1 | `Thanh 4 (à, è...)` | Đọc thành dấu huyền `\`, thiếu dứt khoát | Đứng từ nốt cao nhất giật dội xuống đáy | [ ] |
-| 2 | `p, t, k, q, c, ch` | Quên bật hơi, đọc thành b, d, g, j, z, zh | Dùng tờ giấy mỏng trước miệng kiểm tra gió bay | [ ] |
-| 3 | `ü (yu, qu, xu)` | Đọc thành "u" hoặc di chuyển khẩu hình | Giữ nguyên môi huýt sáo từ đầu đến cuối | [ ] |
-| 4 | `zh, ch, sh, r` | Không uốn lưỡi, đọc bẹt như z, c, s | Cong đầu lưỡi chạm ngạc cứng phía sau nướu | [ ] |
+| 1 | `Thanh 1 (ā, ō, mī...)` | Đọc như thanh ngang TV (44), hạ giọng cuối | Giữ hơi ngân phẳng ở nốt Sol cao (55), không rớt giọng | [ ] |
+| 2 | `Thanh 4 (à, è, bù...)` | Đọc thành dấu huyền `\`, kéo dài yếu ớt | Đứng từ đỉnh cao nhất (5) giật dội xuống đáy (1) dứt khoát | [ ] |
+| 3 | `Âm b - d - g` | Đọc thành b - đ - g tiếng Việt | Là âm tắc không bật hơi, đọc nhẹ tựa p - t - c/k | [ ] |
+| 4 | `Âm bật hơi (p, t, k, q, c, ch)` | Quên bật hơi, đọc lẫn lộn sang b, d, g... | Để tờ giấy mỏng trước môi 5cm, hơi nổ làm giấy bay tung | [ ] |
+| 5 | `Vận mẫu ü (lü, nü, ju, qu, xu)` | Đọc thành "uy" bẹt mép hoặc thành "u" | Khẩu hình huýt sáo ống tròn, giữ bất động môi từ đầu đến cuối | [ ] |
+| 6 | `Vận mẫu e (gē, kě, hē)` | Đọc thành "ơ" hay "ê" bẹt | Miệng mở tự nhiên như chữ o, kéo nhẹ khóe môi, âm vang từ họng | [ ] |
+| 7 | `Âm mặt lưỡi j - q - x` | Đọc thành gi - ch - x tiếng Việt | Trải rộng mặt lưỡi ép sát ngạc cứng, khóe miệng kéo bè mỉm cười | [ ] |
+| 8 | `Âm đầu lưỡi z - c - s` | Uốn lưỡi hoặc đọc lẫn j - q - x | Đầu lưỡi thẳng chạm mặt sau răng cửa trên, hai hàm răng khép | [ ] |
+| 9 | `Âm uốn lưỡi zh - ch - sh - r` | Không uốn lưỡi, đọc bẹt như z - c - s | Cong đầu lưỡi chạm ngạc cứng (vòm họng cứng sau chân răng) | [ ] |
+| 10 | `Vận mẫu đặc biệt -i` | Đọc zi, ci, si, zhi, chi, shi thành "i" | Giữ nguyên thế lưỡi sau khi phát âm phụ âm, âm bật ra tựa "ư" | [ ] |
+| 11 | `Vần mũi trước -n vs mũi sau -ng` | Không phân biệt an/ang, en/eng, in/ing | Đuôi `-n` đầu lưỡi chạm nướu trên; đuôi `-ng` cuống lưỡi chạm ngạc mềm | [ ] |
+| 12 | `Vận mẫu ian & üan` | Đọc thành "i-an", "u-an" | Đọc lướt thành **i-en** và **ü-en** | [ ] |
+| 13 | `Biến điệu 不 (bù) & 一 (yī)` | Luôn đọc thanh 4, không đổi dấu | Đi trước thanh 4 đổi thành thanh 2 (`bú shì`, `yí ge`) | [ ] |

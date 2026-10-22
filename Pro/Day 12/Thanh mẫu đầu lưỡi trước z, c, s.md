@@ -34,6 +34,11 @@
 > - <span style="background:#c62828; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">c</span>: Vị trí y hệt `z`, nhưng **nén hơi cực căng rồi bắn phụt mạnh qua khe giữa răng và đầu lưỡi** (tiếng xì gió bắn mạnh nhất).
 > - <span style="background:#2e7d32; color:white; padding:2px 8px; border-radius:10px; font-weight:bold;">s</span>: Đầu lưỡi nâng gần sát mặt sau răng cửa trên tạo khe hẹp, luồng hơi ma sát xì nhẹ nhàng ra ngoài (giống chữ "x" nhẹ trong tiếng Việt).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KINH ĐIỂN VỚI NHÓM ĐẦU LƯỠI TRƯỚC z, c, s
+> - **Lỗi cong uốn lưỡi**: Nhóm `z, c, s` là âm **THẲNG LƯỠI**. Tuyệt đối không cong đầu lưỡi lên vòm họng kẻo biến thành `zh, ch, sh`!
+> - **Lỗi né tránh âm bật hơi c**: Người học thường sợ âm `c` nên hay đọc bừa thành "x" hoặc "cờ". Đúng chuẩn: Hai hàm răng cắn hờ, đầu lưỡi nén hơi sau răng cửa trên rồi bật phụt luồng gió sắc bén qua kẽ răng như tiếng xì hơi lốp xe!
+> - **Cặp từ dễ nhầm lẫn**: `zǎo` (早 - buổi sáng) vs `cǎo` (草 - bãi cỏ). Bật hơi sai sẽ nói nhầm chào buổi sáng thành chào bãi cỏ!
+
 ---
 
 ## 🎯 3. Bảng Luyện Đánh Vần Ghép Âm & Từ Vựng

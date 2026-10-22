@@ -27,6 +27,11 @@
 > - `ci` ➔ đọc tựa như **"thư"** (bắn phụt luồng khí cực mạnh qua kẽ răng).
 > - `si` ➔ đọc tựa như **"xư"** (xì nhẹ nhàng).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI "CHẾT NGƯỜI" VỚI VẬN MẪU ĐẶC BIỆT -i (TỪ LỖI SAI.MD)
+> - **Lỗi nhìn i đọc "i"**: Hầu hết người tự học nhìn thấy `hànzì` (汉字) liền đọc là "hán di / hán zi", nhìn `sì` (四 - số 4) đọc là "si / xi". Đây là sai lầm cực nặng!
+> - **Hậu quả**: Khi bạn đọc thành "i", khẩu hình kéo dẹp cười làm âm bị biến thành nhóm mặt lưỡi `ji, qi, xi` (ví dụ `sì` biến thành `xì` - hoàn toàn khác nghĩa).
+> - **Cách khắc phục triệt để**: Khép hai hàm răng lại, giữ nguyên đầu lưỡi thẳng cắn nhẹ sau răng, phát âm ngắn gọn như âm "ư" nghẹn lại ở răng.
+
 ---
 
 ## 🎯 3. Bảng Luyện Âm 4 Thanh Điệu

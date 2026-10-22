@@ -46,6 +46,11 @@ Khi một âm tiết bắt đầu bằng nguyên âm `a, o, e` đứng liền sa
 * `Xī'ān` (Tây An: 西安) ⚡ Nếu không có dấu `'` sẽ bị đọc nhầm thành `Xiān` (Tiên: 先).
 * `tiān'ānmén` (Thiên An Môn: 天安门).
 
+> [!CAUTION] 🚫 BẪY LỖI SAI KHI ĐÁNH DẤU VÀ NHẬN DIỆN CHÍNH TẢ PINYIN
+> - **Lầm tưởng y và w là thanh mẫu mới**: Hệ thống thanh mẫu tiếng Trung chỉ có 21 âm. `y` và `w` chỉ là thanh mẫu nửa nguyên âm (*bán nguyên âm*) dùng để làm đẹp mặt chữ chính tả cho `i` và `u` khi đứng đầu từ!
+> - **Đánh dấu sai vị trí trong iu và ui**: Người học hay nhầm lẫn đánh dấu lên chữ cái đầu. Hãy nhớ: **"i và u đi liền nhau, ai đứng sau đánh người đó"** (`jiǔ` đánh trên `u`, `guì` đánh trên `i`).
+> - **Bỏ quên dấu cách âm `'`**: Trong tiếng Trung, nếu bỏ dấu `'` thì thành phố du lịch nổi tiếng `Xī'ān` (Tây An - 2 âm tiết) sẽ bị gộp thành `Xiān` (Tiên - 1 âm tiết), làm thay đổi hoàn toàn ý nghĩa địa danh!
+
 ---
 
 ## 🎯 4. Bài Tập Thực Hành Đánh Dấu & Nhận Diện
