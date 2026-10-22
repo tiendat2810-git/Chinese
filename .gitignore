@@ -1,0 +1,13 @@
+# 1. Bỏ qua cấu hình cá nhân của Obsidian
+.obsidian/
+
+# 2. Bỏ qua môi trường ảo Python trong tts
+tts/venv/
+
+# 3. Bỏ qua các file audio/kết quả tạo ra từ tts
+tts/output/
+
+# 4. Bỏ qua các file tạm/cache của Python
+__pycache__/
+*.pyc
+.DS_Store

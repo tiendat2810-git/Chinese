@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇨🇳 Chinese TTS - Chuyển văn bản tiếng Trung thành giọng nói</title>
+    <style>
+        :root {
+            --bg: #0f0f13;
+            --surface: #1a1a24;
+            --surface2: #22222e;
+            --border: #2e2e3e;
+            --accent: #e53e3e;
+            --accent-glow: rgba(229,62,62,.25);
+            --gold: #f6c343;
+            --green: #48bb78;
+            --blue: #4299e1;
+            --text: #e2e8f0;
+            --text-dim: #8892a4;
+            --radius: 12px;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        /* ── Header ── */
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 28px 0 22px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute; inset:0;
+            background: radial-gradient(circle at 30% 50%, rgba(229,62,62,.08) 0%, transparent 60%),
+                        radial-gradient(circle at 70% 50%, rgba(246,195,67,.06) 0%, transparent 60%);
+        }
+        .header h1 { font-size:2rem; position:relative; z-index:1; }
+        .header h1 span { color: var(--accent); }
+        .header p { color: var(--text-dim); margin-top:6px; position:relative; z-index:1; font-size:.95rem; }
+
+        /* ── Layout ── */
+        .container { max-width:1100px; margin:0 auto; padding:24px 20px 60px; }
+
+        /* ── Tabs ── */
+        .tabs {
+            display:flex; gap:4px; margin-bottom:24px;
+            background: var(--surface); border-radius: var(--radius);
+            padding:4px; border:1px solid var(--border);
+        }
+        .tab-btn {
+            flex:1; padding:12px 16px;
+            background:transparent; border:none; color: var(--text-dim);
+            font-size:.95rem; font-weight:600; cursor:pointer;
+            border-radius:8px; transition: all .2s;
+        }
+        .tab-btn.active {
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 2px 12px var(--accent-glow);
+        }
+        .tab-btn:hover:not(.active) { background: var(--surface2); color: var(--text); }
+
+        .tab-content { display:none; }
+        .tab-content.active { display:block; }
+
+        /* ── Cards ── */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-size:1.1rem; font-weight:700; margin-bottom:16px;
+            display:flex; align-items:center; gap:8px;
+        }
+
+        /* ── Form elements ── */
+        label {
+            display:block; font-size:.85rem; font-weight:600;
+            color: var(--text-dim); margin-bottom:6px; text-transform:uppercase;
+            letter-spacing:.5px;
+        }
+        textarea, input[type="text"], select {
+            width:100%; padding:12px 14px;
+            background: var(--surface2); border:1px solid var(--border);
+            border-radius:8px; color: var(--text);
+            font-size:1rem; font-family:inherit;
+            transition: border-color .2s;
+        }
+        textarea:focus, input[type="text"]:focus, select:focus {
+            outline:none; border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+        textarea { resize:vertical; min-height:140px; line-height:1.7; }
+        textarea.chinese-input { font-size:1.25rem; }
+
+        select {
+            appearance:none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238892a4' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right:36px; cursor:pointer;
+        }
+
+        /* ── Grid cho Voice + Rate + Filename ── */
+        .controls-grid {
+            display:grid;
+            grid-template-columns: 1fr 160px;
+            gap:14px;
+            margin-bottom:16px;
+        }
+        .controls-grid-3 {
+            display:grid;
+            grid-template-columns: 1fr 160px 1fr;
+            gap:14px;
+            margin-bottom:16px;
+        }
+        @media (max-width:700px) {
+            .controls-grid, .controls-grid-3 { grid-template-columns:1fr; }
+        }
+
+        /* ── Rate slider ── */
+        .rate-control { display:flex; align-items:center; gap:10px; }
+        .rate-control input[type="range"] {
+            flex:1; accent-color: var(--accent); height:6px;
+            -webkit-appearance:none; background: var(--surface2);
+            border-radius:3px; border:1px solid var(--border);
+        }
+        .rate-control input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance:none; width:18px; height:18px;
+            background: var(--accent); border-radius:50%; cursor:pointer;
+        }
+        .rate-val { font-size:.9rem; font-weight:700; color: var(--gold); min-width:50px; text-align:center; }
+
+        /* ── Buttons ── */
+        .btn {
+            padding:12px 28px; border:none; border-radius:8px;
+            font-size:.95rem; font-weight:700; cursor:pointer;
+            transition: all .2s; display:inline-flex; align-items:center; gap:8px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #c53030);
+            color: #fff;
+            box-shadow: 0 4px 16px var(--accent-glow);
+        }
+        .btn-primary:hover { transform:translateY(-1px); box-shadow: 0 6px 24px var(--accent-glow); }
+        .btn-primary:disabled { opacity:.5; cursor:not-allowed; transform:none; }
+        .btn-secondary {
+            background: var(--surface2); color: var(--text);
+            border:1px solid var(--border);
+        }
+        .btn-secondary:hover { border-color: var(--accent); }
+        .btn-sm { padding:6px 14px; font-size:.8rem; border-radius:6px; }
+        .btn-green { background: var(--green); color:#1a1a24; }
+        .btn-blue { background: var(--blue); color:#fff; }
+        .btn-danger { background:transparent; color:#e53e3e; border:1px solid #e53e3e44; }
+        .btn-danger:hover { background:#e53e3e22; }
+
+        .btn-group { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+
+        /* ── File upload ── */
+        .file-drop {
+            border:2px dashed var(--border); border-radius: var(--radius);
+            padding:40px 20px; text-align:center; cursor:pointer;
+            transition: all .25s; position:relative;
+        }
+        .file-drop:hover, .file-drop.dragover {
+            border-color: var(--accent); background: var(--accent-glow);
+        }
+        .file-drop input[type="file"] {
+            position:absolute; inset:0; opacity:0; cursor:pointer;
+        }
+        .file-drop .icon { font-size:2.5rem; margin-bottom:10px; }
+        .file-drop .hint { color: var(--text-dim); font-size:.85rem; margin-top:6px; }
+
+        /* ── Audio player ── */
+        .player-box {
+            background: var(--surface2); border:1px solid var(--border);
+            border-radius:10px; padding:16px; margin-top:16px;
+            display:none; animation: fadeIn .3s ease;
+        }
+        @keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+        .player-box audio { width:100%; margin:10px 0; border-radius:8px; }
+        .player-box .meta { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+        .player-box .meta .fname { font-weight:600; color: var(--gold); font-size:.95rem; }
+
+        /* ── File list (Quản lý file) ── */
+        .file-list-item {
+            display:flex; align-items:center; gap:12px;
+            padding:12px 16px; background: var(--surface2);
+            border:1px solid var(--border); border-radius:8px;
+            margin-bottom:8px; transition: all .2s;
+        }
+        .file-list-item:hover { border-color: var(--accent); }
+        .file-list-item .file-info { flex:1; min-width:0; }
+        .file-list-item .file-name {
+            font-weight:600; color: var(--text);
+            white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+        }
+        .file-list-item .file-size { font-size:.8rem; color: var(--text-dim); }
+        .file-list-item .file-actions { display:flex; gap:6px; flex-shrink:0; }
+
+        /* ── Batch results ── */
+        .batch-result {
+            display:flex; align-items:center; gap:12px;
+            padding:10px 14px; background: var(--surface2);
+            border-radius:8px; margin-bottom:6px;
+            border-left: 3px solid var(--green);
+        }
+        .batch-result.error { border-left-color: var(--accent); }
+        .batch-result .br-text { flex:1; font-size:.9rem; }
+        .batch-result .br-actions { display:flex; gap:6px; }
+
+        /* ── Loading spinner ── */
+        .spinner {
+            display:inline-block; width:18px; height:18px;
+            border:2px solid rgba(255,255,255,.3);
+            border-top-color: #fff;
+            border-radius:50%;
+            animation: spin .6s linear infinite;
+        }
+        @keyframes spin { to{transform:rotate(360deg)} }
+
+        /* ── Toast notification ── */
+        .toast {
+            position:fixed; bottom:24px; right:24px;
+            background: var(--green); color:#1a1a24;
+            padding:12px 20px; border-radius:8px;
+            font-weight:600; font-size:.9rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,.4);
+            transform:translateY(100px); opacity:0;
+            transition: all .3s ease; z-index:999;
+        }
+        .toast.show { transform:translateY(0); opacity:1; }
+        .toast.error { background: var(--accent); color:#fff; }
+
+        /* ── Rename modal ── */
+        .modal-overlay {
+            position:fixed; inset:0; background:rgba(0,0,0,.7);
+            display:none; align-items:center; justify-content:center;
+            z-index:900; backdrop-filter:blur(4px);
+        }
+        .modal-overlay.show { display:flex; }
+        .modal {
+            background: var(--surface); border:1px solid var(--border);
+            border-radius: var(--radius); padding:28px;
+            width:90%; max-width:440px; animation: fadeIn .2s ease;
+        }
+        .modal h3 { margin-bottom:16px; }
+        .modal .btn-group { justify-content:flex-end; }
+
+        /* ── Empty state ── */
+        .empty-state {
+            text-align:center; padding:48px 20px; color: var(--text-dim);
+        }
+        .empty-state .icon { font-size:3rem; margin-bottom:12px; opacity:.5; }
+
+        /* ── Status bar ── */
+        .status-bar {
+            position:fixed; bottom:0; left:0; right:0;
+            background: var(--surface); border-top:1px solid var(--border);
+            padding:8px 20px; font-size:.8rem; color: var(--text-dim);
+            display:flex; justify-content:space-between; align-items:center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🎙️ Chinese <span>TTS</span> Studio</h1>
+    <p>Chuyển đổi văn bản tiếng Trung thành giọng nói bằng Microsoft Edge Neural Voice</p>
+</div>
+
+<div class="container">
+
+    <!-- ── Tabs ── -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="single">✍️ Nhập văn bản</button>
+        <button class="tab-btn" data-tab="batch">📂 Upload file</button>
+        <button class="tab-btn" data-tab="files">🗂️ Quản lý file</button>
+    </div>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- TAB 1: Nhập văn bản đơn lẻ -->
+    <!-- ══════════════════════════════════════════════ -->
+    <div id="tab-single" class="tab-content active">
+        <div class="card">
+            <div class="card-title">📝 Nhập nội dung cần đọc</div>
+            <textarea id="textInput" class="chinese-input"
+                      placeholder="Nhập chữ Hán, Pinyin hoặc đoạn văn tiếng Trung tại đây...&#10;&#10;Ví dụ:&#10;你好，我叫李华。今天天气很好。&#10;Nǐ hǎo, wǒ jiào Lǐ Huá."></textarea>
+        </div>
+
+        <div class="card">
+            <div class="card-title">⚙️ Cài đặt giọng đọc</div>
+
+            <div class="controls-grid-3">
+                <div>
+                    <label>Chọn giọng đọc</label>
+                    <select id="voiceSelect">
+                        {% for group_id, group in voices.items() %}
+                        <optgroup label="{{ group.label }}">
+                            {% for v in group.voices %}
+                            <option value="{{ v.id }}" {% if v.id == 'zh-CN-XiaoxiaoNeural' %}selected{% endif %}>
+                                {{ v.name }} ({{ v.gender }}) — {{ v.style }}
+                            </option>
+                            {% endfor %}
+                        </optgroup>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div>
+                    <label>Tốc độ đọc</label>
+                    <div class="rate-control">
+                        <input type="range" id="rateSlider" min="-50" max="100" value="0" step="5">
+                        <span class="rate-val" id="rateDisplay">0%</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Tên file xuất (tuỳ chọn)</label>
+                    <input type="text" id="filenameInput"
+                           placeholder="Ví dụ: nǐ hǎo hoặc 你好">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" id="btnGenerate" onclick="generateSingle()">
+                    🔊 Chuyển đổi & Nghe
+                </button>
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div class="player-box" id="playerBox">
+            <div class="meta">
+                <span class="fname" id="playerFilename"></span>
+                <div style="display:flex; gap:8px;">
+                    <button class="btn btn-sm btn-green" onclick="downloadCurrent()">⬇️ Tải MP3</button>
+                    <button class="btn btn-sm btn-secondary" onclick="renameCurrent()">✏️ Đổi tên</button>
+                </div>
+            </div>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- TAB 2: Upload file hàng loạt -->
+    <!-- ══════════════════════════════════════════════ -->
+    <div id="tab-batch" class="tab-content">
+        <div class="card">
+            <div class="card-title">📄 Upload file danh sách từ vựng</div>
+            <div class="file-drop" id="fileDrop">
+                <input type="file" id="fileUpload" accept=".csv,.tsv,.txt">
+                <div class="icon">📁</div>
+                <div><strong>Kéo thả file vào đây</strong> hoặc nhấp để chọn file</div>
+                <div class="hint">
+                    Hỗ trợ: .csv, .tsv, .txt<br>
+                    CSV/TSV: Cột 1 = Nội dung đọc, Cột 2 = Tên file<br>
+                    TXT: Mỗi dòng là một từ/câu (tên file = nội dung)
+                </div>
+            </div>
+            <div id="fileInfo" style="margin-top:12px; color:var(--gold); font-weight:600; display:none;"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">⚙️ Cài đặt giọng đọc (áp dụng cho toàn bộ file)</div>
+            <div class="controls-grid">
+                <div>
+                    <label>Chọn giọng đọc</label>
+                    <select id="batchVoiceSelect">
+                        {% for group_id, group in voices.items() %}
+                        <optgroup label="{{ group.label }}">
+                            {% for v in group.voices %}
+                            <option value="{{ v.id }}" {% if v.id == 'zh-CN-XiaoxiaoNeural' %}selected{% endif %}>
+                                {{ v.name }} ({{ v.gender }}) — {{ v.style }}
+                            </option>
+                            {% endfor %}
+                        </optgroup>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <label>Tốc độ đọc</label>
+                    <div class="rate-control">
+                        <input type="range" id="batchRateSlider" min="-50" max="100" value="0" step="5">
+                        <span class="rate-val" id="batchRateDisplay">0%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary" id="btnBatch" onclick="generateBatch()">
+                    🚀 Chuyển đổi toàn bộ
+                </button>
+            </div>
+        </div>
+
+        <!-- Batch results -->
+        <div id="batchResults"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- TAB 3: Quản lý file đã tạo -->
+    <!-- ══════════════════════════════════════════════ -->
+    <div id="tab-files" class="tab-content">
+        <div class="card">
+            <div class="card-title" style="justify-content:space-between;">
+                <span>📦 File audio đã tạo</span>
+                <button class="btn btn-sm btn-secondary" onclick="loadFiles()">🔄 Làm mới</button>
+            </div>
+            <div id="fileList">
+                <div class="empty-state">
+                    <div class="icon">🎵</div>
+                    <div>Chưa có file nào. Hãy chuyển đổi văn bản ở tab đầu tiên!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ── Rename Modal ── -->
+<div class="modal-overlay" id="renameModal">
+    <div class="modal">
+        <h3>✏️ Đổi tên file</h3>
+        <label>Tên file mới</label>
+        <input type="text" id="renameInput" placeholder="Nhập tên mới...">
+        <input type="hidden" id="renameOldName">
+        <div class="btn-group">
+            <button class="btn btn-secondary" onclick="closeRenameModal()">Hủy</button>
+            <button class="btn btn-primary" onclick="submitRename()">✅ Lưu</button>
+        </div>
+    </div>
+</div>
+
+<!-- ── Toast ── -->
+<div class="toast" id="toast"></div>
+
+<!-- ── Status bar ── -->
+<div class="status-bar">
+    <span>📂 File xuất ra: <strong>tts/output/</strong></span>
+    <span id="fileCount">0 file</span>
+</div>
+
+<script>
+// ── State ──
+let currentAudioUrl = '';
+let currentFilename = '';
+
+// ── Tabs ──
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+        if (btn.dataset.tab === 'files') loadFiles();
+    });
+});
+
+// ── Rate slider ──
+document.getElementById('rateSlider').addEventListener('input', e => {
+    const v = parseInt(e.target.value);
+    document.getElementById('rateDisplay').textContent = (v >= 0 ? '+' : '') + v + '%';
+});
+document.getElementById('batchRateSlider').addEventListener('input', e => {
+    const v = parseInt(e.target.value);
+    document.getElementById('batchRateDisplay').textContent = (v >= 0 ? '+' : '') + v + '%';
+});
+
+// ── File drop zone ──
+const fileDrop = document.getElementById('fileDrop');
+fileDrop.addEventListener('dragover', e => { e.preventDefault(); fileDrop.classList.add('dragover'); });
+fileDrop.addEventListener('dragleave', () => fileDrop.classList.remove('dragover'));
+fileDrop.addEventListener('drop', e => { e.preventDefault(); fileDrop.classList.remove('dragover'); });
+document.getElementById('fileUpload').addEventListener('change', function() {
+    if (this.files[0]) {
+        document.getElementById('fileInfo').style.display = 'block';
+        document.getElementById('fileInfo').textContent = '📎 Đã chọn: ' + this.files[0].name;
+    }
+});
+
+// ── Toast ──
+function showToast(msg, isError = false) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.className = 'toast show' + (isError ? ' error' : '');
+    setTimeout(() => t.className = 'toast', 3000);
+}
+
+// ── Generate single ──
+async function generateSingle() {
+    const text = document.getElementById('textInput').value.trim();
+    if (!text) { showToast('Vui lòng nhập nội dung!', true); return; }
+
+    const btn = document.getElementById('btnGenerate');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Đang tạo...';
+
+    const rate = parseInt(document.getElementById('rateSlider').value);
+    const rateStr = (rate >= 0 ? '+' : '') + rate + '%';
+
+    try {
+        const res = await fetch('/api/tts', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                text: text,
+                voice: document.getElementById('voiceSelect').value,
+                rate: rateStr,
+                filename: document.getElementById('filenameInput').value.trim()
+            })
+        });
+        const data = await res.json();
+        if (data.error) { showToast(data.error, true); return; }
+
+        // Show player
+        currentAudioUrl = data.url;
+        currentFilename = data.filename;
+        const player = document.getElementById('audioPlayer');
+        player.src = data.url + '?t=' + Date.now();
+        document.getElementById('playerFilename').textContent = data.filename;
+        document.getElementById('playerBox').style.display = 'block';
+        player.play();
+        showToast('✅ Đã tạo: ' + data.filename);
+    } catch (err) {
+        showToast('Lỗi kết nối server: ' + err.message, true);
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '🔊 Chuyển đổi & Nghe';
+    }
+}
+
+// ── Download current ──
+function downloadCurrent() {
+    if (!currentAudioUrl) return;
+    const a = document.createElement('a');
+    a.href = currentAudioUrl;
+    a.download = currentFilename;
+    a.click();
+}
+
+// ── Rename current (from player) ──
+function renameCurrent() {
+    openRenameModal(currentFilename);
+}
+
+// ── Generate batch ──
+async function generateBatch() {
+    const fileInput = document.getElementById('fileUpload');
+    if (!fileInput.files[0]) { showToast('Vui lòng chọn file!', true); return; }
+
+    const btn = document.getElementById('btnBatch');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Đang xử lý...';
+
+    const rate = parseInt(document.getElementById('batchRateSlider').value);
+    const rateStr = (rate >= 0 ? '+' : '') + rate + '%';
+
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+    formData.append('voice', document.getElementById('batchVoiceSelect').value);
+    formData.append('rate', rateStr);
+
+    try {
+        const res = await fetch('/api/tts-batch', { method: 'POST', body: formData });
+        const data = await res.json();
+        if (data.error) { showToast(data.error, true); return; }
+
+        // Render results
+        const container = document.getElementById('batchResults');
+        container.innerHTML = '<div class="card"><div class="card-title">📋 Kết quả chuyển đổi (' + data.total + ' mục)</div>';
+
+        data.results.forEach(r => {
+            if (r.status === 'success') {
+                container.innerHTML += `
+                    <div class="batch-result">
+                        <div class="br-text"><strong>${r.filename}</strong><br><span style="color:var(--text-dim);font-size:.85rem">${r.text}</span></div>
+                        <div class="br-actions">
+                            <button class="btn btn-sm btn-secondary" onclick="playAudio('${r.url}')">▶️</button>
+                            <button class="btn btn-sm btn-green" onclick="downloadFile('${r.url}','${r.filename}')">⬇️</button>
+                        </div>
+                    </div>`;
+            } else {
+                container.innerHTML += `
+                    <div class="batch-result error">
+                        <div class="br-text"><strong>${r.text}</strong><br><span style="color:var(--accent);font-size:.85rem">❌ ${r.status}</span></div>
+                    </div>`;
+            }
+        });
+        container.innerHTML += '</div>';
+        showToast(`✅ Hoàn tất! Đã tạo ${data.total} file audio.`);
+    } catch (err) {
+        showToast('Lỗi: ' + err.message, true);
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '🚀 Chuyển đổi toàn bộ';
+    }
+}
+
+// ── Play audio helper ──
+function playAudio(url) {
+    const player = document.getElementById('audioPlayer');
+    player.src = url + '?t=' + Date.now();
+    document.getElementById('playerBox').style.display = 'block';
+    document.getElementById('playerFilename').textContent = url.split('/').pop();
+    currentAudioUrl = url;
+    currentFilename = url.split('/').pop();
+    // Switch to tab 1 to show player
+    document.querySelectorAll('.tab-btn')[0].click();
+    player.play();
+}
+
+// ── Download helper ──
+function downloadFile(url, name) {
+    const a = document.createElement('a');
+    a.href = url; a.download = name; a.click();
+}
+
+// ── Load files ──
+async function loadFiles() {
+    try {
+        const res = await fetch('/api/files');
+        const files = await res.json();
+        const container = document.getElementById('fileList');
+        document.getElementById('fileCount').textContent = files.length + ' file';
+
+        if (files.length === 0) {
+            container.innerHTML = '<div class="empty-state"><div class="icon">🎵</div><div>Chưa có file nào.</div></div>';
+            return;
+        }
+
+        container.innerHTML = '';
+        files.forEach(f => {
+            container.innerHTML += `
+                <div class="file-list-item" id="file-${CSS.escape(f.name)}">
+                    <div style="font-size:1.5rem">🎵</div>
+                    <div class="file-info">
+                        <div class="file-name">${f.name}</div>
+                        <div class="file-size">${f.size}</div>
+                    </div>
+                    <div class="file-actions">
+                        <button class="btn btn-sm btn-secondary" onclick="playAudio('${f.url}')">▶️</button>
+                        <button class="btn btn-sm btn-green" onclick="downloadFile('${f.url}','${f.name}')">⬇️</button>
+                        <button class="btn btn-sm btn-secondary" onclick="openRenameModal('${f.name}')">✏️</button>
+                        <button class="btn btn-sm btn-danger" onclick="deleteFile('${f.name}')">🗑️</button>
+                    </div>
+                </div>`;
+        });
+    } catch (err) {
+        showToast('Lỗi tải danh sách file', true);
+    }
+}
+
+// ── Rename modal ──
+function openRenameModal(oldName) {
+    document.getElementById('renameOldName').value = oldName;
+    document.getElementById('renameInput').value = oldName.replace('.mp3', '');
+    document.getElementById('renameModal').classList.add('show');
+    document.getElementById('renameInput').focus();
+}
+function closeRenameModal() {
+    document.getElementById('renameModal').classList.remove('show');
+}
+async function submitRename() {
+    const oldName = document.getElementById('renameOldName').value;
+    const newName = document.getElementById('renameInput').value.trim();
+    if (!newName) return;
+
+    try {
+        const res = await fetch('/api/rename', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ old_name: oldName, new_name: newName })
+        });
+        const data = await res.json();
+        if (data.error) { showToast(data.error, true); return; }
+
+        currentFilename = data.new_name;
+        currentAudioUrl = data.url;
+        document.getElementById('playerFilename').textContent = data.new_name;
+        closeRenameModal();
+        showToast('✅ Đã đổi tên: ' + data.new_name);
+        loadFiles();
+    } catch (err) {
+        showToast('Lỗi: ' + err.message, true);
+    }
+}
+
+// ── Delete file ──
+async function deleteFile(name) {
+    if (!confirm('Xóa file "' + name + '"?')) return;
+    try {
+        const res = await fetch('/api/delete', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ filename: name })
+        });
+        const data = await res.json();
+        if (data.error) { showToast(data.error, true); return; }
+        showToast('🗑️ Đã xóa: ' + name);
+        loadFiles();
+    } catch (err) {
+        showToast('Lỗi: ' + err.message, true);
+    }
+}
+
+// ── Keyboard shortcuts ──
+document.addEventListener('keydown', e => {
+    if (e.ctrlKey && e.key === 'Enter') {
+        const activeTab = document.querySelector('.tab-content.active').id;
+        if (activeTab === 'tab-single') generateSingle();
+        else if (activeTab === 'tab-batch') generateBatch();
+    }
+});
+
+// ── Enter key in rename modal ──
+document.getElementById('renameInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') submitRename();
+    if (e.key === 'Escape') closeRenameModal();
+});
+
+// ── Init ──
+loadFiles();
+</script>
+</body>
+</html>
